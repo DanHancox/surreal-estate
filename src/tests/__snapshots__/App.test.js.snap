@@ -5,6 +5,9 @@ exports[`App renders App 1`] = `
   <div
     class="App"
   >
+    <h2>
+      Surreal Estate
+    </h2>
     <header
       class="App-header"
     >

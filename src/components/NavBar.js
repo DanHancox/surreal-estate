@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/navBar.css";
 
-function NavBar() {
+const NavBar = () => {
   return (
     <div>
       <nav className="navBar">
         <img
           className="logoPic"
-          src="https://mcrcodes.s3.eu-west-2.amazonaws.com/course/surreal-estate/logo.png"
+          src="https://play-lh.googleusercontent.com/w5qmYcJt_BK4JmvHrQlAB_0aHLQoE_rNA-kZUKjbmaFpJd5jrZmVgv13JLQQ16MXxw=w526-h296-rw"
           alt="houselogo"
         />
         <ul className="navbar-links">
@@ -21,6 +21,6 @@ function NavBar() {
       </nav>
     </div>
   );
-}
+};
 
 export default NavBar;
