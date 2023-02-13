@@ -26,7 +26,7 @@
   display: inline-block;
 }
 
-.navbar-links-item {
+.item {
   display: inline-block;
   margin-right: 3px;
   padding: 10px;
@@ -39,7 +39,7 @@
   font-weight: bold;
 }
 
-.navbar-links-item:hover {
+.item:hover {
   background-color: rgb(221, 229, 221);
   cursor: pointer;
 }

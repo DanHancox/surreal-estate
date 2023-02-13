@@ -1,4 +1,5 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import "../styles/app.css";
 import NavBar from "./NavBar";
 import Properties from "./Properties";
@@ -10,8 +11,10 @@ const App = () => {
       <h2>Surreal Estate</h2>
       <header className="App-header">
         <NavBar />
-        <Properties />
-        <AddProperty />
+        <Routes>
+          <Route path="/" element={Properties()} />
+          <Route path="/add-Property" element={AddProperty()} />
+        </Routes>
       </header>
     </div>
   );
