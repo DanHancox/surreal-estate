@@ -11,6 +11,8 @@
     width: 16em;
     display: inline-block;
     vertical-align: middle;
+    padding: 0.5em;
+    
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 1em;
