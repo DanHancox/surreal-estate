@@ -9,13 +9,11 @@ const App = () => {
   return (
     <div className="App">
       <h2>Surreal Estate</h2>
-      <header className="App-header">
-        <NavBar />
-        <Routes>
-          <Route path="/" element={Properties()} />
-          <Route path="/add-Property" element={AddProperty()} />
-        </Routes>
-      </header>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Properties />} />
+        <Route path="/add-property" element={<AddProperty />} />
+      </Routes>
     </div>
   );
 };

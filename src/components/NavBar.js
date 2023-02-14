@@ -15,7 +15,7 @@ const NavBar = () => {
           <Link className="item" to="/">
             View Properties
           </Link>
-          <Link className="item" to="add-properties">
+          <Link className="item" to="/add-property">
             Add Properties
           </Link>
         </ul>
