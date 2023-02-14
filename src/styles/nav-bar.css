@@ -5,11 +5,14 @@
   height: 80px;
   padding: 0 40px;
   background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+  border: 2px solid black;
+  border-radius: 12.5px;
+  margin: 15px;
 }
 
 .logoPic {
-  height: 80px;
+  height: 70px;
   margin-right: 80px;
 }
 
@@ -31,3 +34,18 @@
 .item:hover {
   color: #ff5a5f;
 }
+
+@media screen and (max-width: 600px) {
+  .navbar-links, .item {
+    display: block;
+    padding: 6px
+    
+  }
+}
+@media screen and (max-width: 600px) {
+  .logoPic {
+    height: 40px;
+    margin-right: 20px;
+  }
+}
+

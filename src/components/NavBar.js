@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/navBar.css";
+import "../styles/nav-bar.css";
 
 const NavBar = () => {
   return (
@@ -8,7 +8,7 @@ const NavBar = () => {
       <nav className="navBar">
         <img
           className="logoPic"
-          src="https://play-lh.googleusercontent.com/w5qmYcJt_BK4JmvHrQlAB_0aHLQoE_rNA-kZUKjbmaFpJd5jrZmVgv13JLQQ16MXxw=w526-h296-rw"
+          src="http://clipart-library.com/new_gallery/3-30105_white-house-logo-png-village-icon-png.png"
           alt="houselogo"
         />
         <ul className="navbar-links">

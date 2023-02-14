@@ -1,7 +1,7 @@
 import React from "react";
 
 const AddProperty = () => {
-  return <div>Add Property Page</div>;
+  return <div className="add-property">Add Property Page</div>;
 };
 
 export default AddProperty;
