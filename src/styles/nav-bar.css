@@ -36,10 +36,10 @@
 }
 
 @media screen and (max-width: 600px) {
-  .navbar-links, .item {
+  .navbar-links,
+  .item {
     display: block;
-    padding: 6px
-    
+    padding: 6px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -48,4 +48,3 @@
     margin-right: 20px;
   }
 }
-
