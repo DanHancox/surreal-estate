@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/add-property.css";
 
 const AddProperty = () => {
+  const initialState = {
+    fields: {
+      title: "",
+    },
+  };
   return (
     <div className="add-property">
       <form>

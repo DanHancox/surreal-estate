@@ -39,12 +39,18 @@
   .navbar-links,
   .item {
     display: block;
-    padding: 6px;
+    padding: 4px;
   }
 }
 @media screen and (max-width: 600px) {
   .logoPic {
     height: 40px;
     margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navBar {
+    height: 110px;
   }
 }
