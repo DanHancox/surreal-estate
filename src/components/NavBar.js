@@ -6,6 +6,7 @@ const NavBar = () => {
   return (
     <div>
       <nav className="navBar">
+        <h2>Surreal Estate</h2>
         <img
           className="logoPic"
           src="http://clipart-library.com/new_gallery/3-30105_white-house-logo-png-village-icon-png.png"

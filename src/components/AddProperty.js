@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/add-property.css";
-import propertyData from "../requests/propertyData";
+import postProperty from "../requests/postProperty";
 
 const AddProperty = () => {
   const initialState = {
@@ -12,7 +12,7 @@ const AddProperty = () => {
   const [fields, setFields] = useState(initialState.fields);
 
   const handleAddProperty = (event) => {
-    propertyData(fields);
+    postProperty(fields);
     event.preventDefault();
   };
 
@@ -44,6 +44,8 @@ const AddProperty = () => {
             >
               <option value="Manchester">Manchester</option>
               <option value="Leeds">Leeds</option>
+              <option value="Liverpool">Liverpool</option>
+              <option value="Bristol">Bristol</option>
             </select>
           </label>
         </div>
@@ -65,6 +67,48 @@ const AddProperty = () => {
               <option value="Cottage">Cottage</option>
               <option value="Bungalow">Bungalow</option>
             </select>
+          </label>
+          <label htmlFor="bedrooms">
+            Bedrooms
+            <input
+              id="bedrooms"
+              name="bedrooms"
+              value={fields.bedrooms}
+              onChange={handleFieldChange}
+              placeholder="0"
+            />
+          </label>
+          <label htmlFor="bathrooms">
+            Bathrooms
+            <input
+              id="bathrooms"
+              name="bathrooms"
+              value={fields.bathrooms}
+              onChange={handleFieldChange}
+              placeholder="0"
+            />
+          </label>
+          <label htmlFor="price">
+            Price
+            <input
+              id="price"
+              name="price"
+              value={fields.price}
+              onChange={handleFieldChange}
+              placeholder="£0.00"
+            />
+          </label>
+        </div>
+        <div className="form_data--email">
+          <label htmlFor="email">
+            Email
+            <input
+              id="email"
+              name="email"
+              value={fields.email}
+              onChange={handleFieldChange}
+              placeholder="example@gmail.com"
+            />
           </label>
         </div>
         <button className="submit-button" type="submit">
