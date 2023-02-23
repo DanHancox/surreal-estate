@@ -1,19 +1,39 @@
+/* eslint-disable no-console */
 import React, { useState } from "react";
+import axios from "axios";
 import "../styles/add-property.css";
-import postProperty from "../requests/postProperty";
 
 const AddProperty = () => {
   const initialState = {
     fields: {
       title: "",
-      city: "Manchester",
+      city: "",
+      type: "",
+      bedrooms: 0,
+      bathrooms: 0,
+      price: 0,
+      email: "",
     },
   };
+
   const [fields, setFields] = useState(initialState.fields);
 
+  const postProperty = async () => {
+    console.log(fields);
+    try {
+      await axios
+        .post("http://localhost:4000/api/v1/PropertyListing", fields)
+        .then((response) => {
+          console.log(response);
+        });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const handleAddProperty = (event) => {
-    postProperty(fields);
     event.preventDefault();
+    postProperty(fields);
   };
 
   const handleFieldChange = (event) => {
